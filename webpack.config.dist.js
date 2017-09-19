@@ -83,7 +83,17 @@ module.exports = {
 						}
 					}
 				]
-			}
+			},
+            {
+                test: /\.(woff2?|eot|ttf|otf|wav)(\?.*)?$/,
+                use: [{
+                    loader: 'url-loader',
+                    query: {
+                        limit: 0
+                    }
+                }],
+
+            }
 		]
 	},
 

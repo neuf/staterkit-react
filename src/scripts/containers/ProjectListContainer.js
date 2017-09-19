@@ -110,7 +110,6 @@ class ProjectListContainer extends Component {
 
     return (
       <div>
-        <div className="test">gegre</div>
         {projectListRender}
       </div>
     );

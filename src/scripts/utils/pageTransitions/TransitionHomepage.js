@@ -14,8 +14,6 @@ const TransitionHomepage = {
     // Component Homepage Will Appear
     componentWillAppear : (callback) => {
 
-        console.log(PAGEANIMATED);
-
         // Get current animated_page element
         const el = document.querySelectorAll('.animated_page')[0];
         
@@ -42,11 +40,6 @@ const TransitionHomepage = {
 
         // Function Animate
         const animate = () => {
-            
-            // Get element to animate
-            const homepage = el.querySelector('.homepage');
-
-            console.log('%cJe WTF pour entrer', 'color: green');  
 
             // Do transition at appear
             TweenLite.to(el, 2,{
@@ -69,7 +62,6 @@ const TransitionHomepage = {
 
     // Do transition between pages from Homepage
     componentWillLeave : (callback) => {
-        console.log('%cJe WTF pour partir', 'color: green'); 
         const el = document.querySelectorAll('.animated_page')[1];
         el.classList.add('is-animated');  
         TweenMax.to(el, 1, {

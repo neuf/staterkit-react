@@ -9,8 +9,10 @@ import ProjectListContainer from "../../containers/ProjectListContainer"
 class Home extends Component {
   render() {
     return (
-      <div className="homepage">
-        <ProjectListContainer/>
+      <div className="home_wrapper">
+          <h1>Homepage</h1>
+          <img src="../assets/images/ohyeah.gif" alt=""/>
+          <ProjectListContainer/>
       </div>
     )
   }

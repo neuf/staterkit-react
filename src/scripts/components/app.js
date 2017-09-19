@@ -1,12 +1,14 @@
 // Import React
 import React, { Component } from "react";
-import { Route, Link } from "react-router-dom";
+import { Route } from "react-router-dom";
 import TransitionGroup from "react-transition-group/TransitionGroup";
 import AnimatedSwitch from '../utils/AnimatedSwitch';
 
 // Import Config
 import routes from "../config/routes";
 
+// Import Components
+import Navigation from "../components/00_ui/Navigation"
 
 // Component
 class App extends Component {
@@ -34,8 +36,7 @@ class App extends Component {
 		const renderRoutes = this.renderRoutes();
 		return (
 			<main className="main">
-				<Link to="/">Home</Link>
-				<Link to="/about">About</Link>
+				<Navigation></Navigation>
 				<Route
 					render={({ location }) => (
 						<TransitionGroup component="div">

@@ -2,6 +2,20 @@
 /****** Navigation ******/
 /************************/
 
-.nav{
+.navigation{
 
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  vertical-align: top;
+  z-index: 10;
+
+  ul {
+    li {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 4rem;
+    }
+  }
 }
