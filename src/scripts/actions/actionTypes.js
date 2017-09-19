@@ -1,0 +1,2 @@
+// Users
+export const GET_PROJECTS_SUCCESS = 'GET_PROJECTS_SUCCESS';
